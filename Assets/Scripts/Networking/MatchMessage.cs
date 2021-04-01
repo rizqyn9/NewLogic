@@ -10,6 +10,7 @@ namespace RizqyNetworking
     {
         public ServerMatchOperation serverMatchOperation;
         public Guid matchID;
+        public string roomID;
     }
 
     public enum ServerMatchOperation : byte
@@ -25,6 +26,8 @@ namespace RizqyNetworking
 
     #endregion
 
+
+
     #region ClientState
 
     /// <summary>
@@ -34,6 +37,7 @@ namespace RizqyNetworking
     {
         public ClientMatchOperation clientMatchOperation;
         public Guid matchId;
+        public string roomID;
         public MatchInfo[] matchInfos;
         public PlayerInfo[] playerInfos;
     }
@@ -69,6 +73,7 @@ namespace RizqyNetworking
         public Guid matchId;
         public byte players;
         public byte maxPlayers;
+        public string roomID;
     }
 
     #endregion
@@ -83,6 +88,7 @@ namespace RizqyNetworking
         public int playerIndex;
         public bool ready;
         public Guid matchId;
+        public string roomID;
     }
 
     #endregion
