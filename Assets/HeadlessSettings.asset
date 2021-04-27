@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5918d01930830744a9ade673f1bca72d, type: 3}
+  m_Name: HeadlessSettings
+  m_EditorClassIdentifier: 
+  buildPath: /Users/rizqynugroho9/Desktop/room
+  buildID: 1
+  profileSection: 1
+  profileName: Untitled
+  scenesSection: 1
+  valueOverrideScenes: 0
+  valueSceneAssets: []
+  targetSection: 1
+  valueOverrideTarget: 0
+  valuePlatform: 2
+  valueArchitecture: 0
+  valueArchitectureWindows: 0
+  valueArchitectureOSX: 0
+  valueArchitectureLinux: 0
+  optionsSection: 1
+  valueRememberPath: 0
+  valueSkipConfirmation: 0
+  applicationSection: 1
+  valueFramerate: 60
+  valueLimitFramerate: 1
+  valueCamera: 1
+  valueConsole: 1
+  assetsSection: 1
+  valueDummy: 0
+  preProcessingSection: 1
+  valueGI: 1
+  valueAudio: 1
+  postProcessingSection: 1
+  valueBackup: 0
+  startingDocumentation: 1
+  profilesDocumentation: 1
+  codeDocumentation: 1
+  applicationDocumentation: 1
+  assetsDocumentation: 1
+  cloudDocumentation: 1
+  batchDocumentation: 1
+  troubleshootDocumentation: 1

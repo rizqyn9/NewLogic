@@ -1,0 +1,14 @@
+It is very easy to execute code specific to headless builds, which you can use to skip menus or for server functionality.<br><br>
+
+In any script you can call "<b>HeadlessBuilder.IsHeadless()</b>". It will return true if the user is running a headless build. It will return false if the user is running a regular build.<br><br>
+
+Similarly, you can call "<b>HeadlessBuilder.IsBuildingHeadless()</b>" in your build post-process scripts, to see if the current build is a headless build.<br><br>
+
+Notably, you can call "<b>HeadlessBuilder.GetProfileName()</b>" during either building or runtime, to get the name of the current profile as a string.<br><br>
+
+Headless Builder also provides <b>callbacks</b> during both building and runtime.<br>
+There are two simple example scripts in the "Examples" folder that speak for themselves.<br><br>
+
+To allow you to exclude specific code from certain builds, there are two define directives.<br>
+Use "<b>#if HEADLESS</b>" or "<b>#if HEADLESS_PROFILENAME</b>" in your script.<br>
+For example, for a profile named "GameServer", the corresponding define directives would be "<b>#if HEADLESS</b>" and "<b>#if HEADLESS_GAMESERVER</b>".

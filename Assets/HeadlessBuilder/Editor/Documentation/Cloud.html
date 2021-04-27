@@ -1,0 +1,14 @@
+Headless Builder is compatible with Unity Cloud Build.<br><br>
+
+Login to the online <b>Unity Dashboard</b> and create a target for a regular build if you don't already have one. Verify it works properly.<br><br>
+
+Then open its Advanced Settings and set the "<b>Pre-Export Method Name</b>" to "<b>HeadlessBuilder.CloudBuild</b>". That's all!<br><br>
+
+<i>Note:</i><br>
+Unity Cloud Build will ignore the scene list and target platform chosen in the Headless Builder settings. Instead it will use the settings from the Unity Dashboard.<br><br>
+
+<i>Note:</i><br>
+The executable name chosen in the Unity Dashboard will be ignored by Headless Builder.<br><br>
+
+<i>Note:</i><br>
+At this time, Unity Cloud Build does not allow you to select a Headless Builder profile. Because of this, it will always build the default profile.

@@ -26,6 +26,7 @@ namespace RizqyNetworking
 
         [Header("RoomGUI")]
         public GameObject matchControllerPrefab;
+        public GameObject lobbyPrefab;
 
 
         /// <summary>
@@ -418,6 +419,9 @@ namespace RizqyNetworking
                         localPlayerMatch = msg.matchId;
                         roomView.SetActive(true);
                         roomCode.text = msg.roomID;
+                        Instantiate(lobbyPrefab);
+                        lobbyPrefab.gameObject.GetComponent<LobbyController>().RoomCode(msg.roomID);
+
 
                         //SceneManager.LoadScene(1, LoadSceneMode.Single);
                         //NetworkManager. 
@@ -430,6 +434,9 @@ namespace RizqyNetworking
                 case ClientMatchOperation.Joined:
                     {
                         localJoinedMatch = msg.matchId;
+                        Instantiate(lobbyPrefab);
+                        lobbyPrefab.gameObject.GetComponent<LobbyController>().RoomCode(msg.roomID);
+
                         //ShowRoomView();
                         //roomGUI.RefreshRoomPlayers(msg.playerInfos);
                         //roomGUI.SetOwner(false);

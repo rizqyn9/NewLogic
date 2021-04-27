@@ -1,0 +1,16 @@
+If you enable the <b>replace assets</b> feature, Headless Builder will replace unneeded assets with dummies, saving disk space and RAM load.<br><br>
+
+This only applies to assets that headless builds have no use for, such as textures, sounds and videos. Functional assets such as materials and models will not be touched.<br><br>
+
+Since the assets will be replaced with dummies and not stripped altogether, your script calls and game objects will remain intact.<br><br>
+
+With this feature enabled, it takes longer to make a headless build from the Unity Editor, because the original assets are re-imported afterwards.<br>
+This is why the feature is disabled by default, but we recommend turning it on for <b>release builds</b>.<br><br>
+
+<i>Note:</i><br>
+If your headless build somehow requires an asset that Headless Builder would replace with a dummy, create an empty file next to the original asset with the same filename but ending in "<b>.headless~</b>".<br><br>
+
+For example, if you want the texture "Assets/SpaceSuit/Helmet.png" to remain intact, create an empty file in "Assets/SpaceSuit/" called "Helmet.png.headless~".<br><br>
+
+<i>Note:</i><br>
+If an asset you consider to be unneeded is not replaced, you can create a dummy asset yourself, such as a 1x1 pixel image. Store the dummy in "Assets/HeadlessBuilder/Editor/Assets/Dummy/" and name it "bin.extension" (e.g. "bin.mpeg").

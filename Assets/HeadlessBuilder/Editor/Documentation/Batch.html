@@ -1,0 +1,15 @@
+To do a headless build from the command line, start the Unity Editor with the following parameters:<br>
+<b>-quit</b> <b>-batchmode</b><br>
+<b>-projectPath "<i>path to project folder</i>"</b><br>
+<b>-headlessPath "<i>path to destination folder</i>"</b><br>
+<b>-executeMethod HeadlessBuilder.BatchBuild</b><br><br>
+
+If you have multiple profiles and would like to build a profile that is not the default, add:<br>
+<b>-headlessProfile "<i>name of profile</i>"</b><br><br>
+
+<i>Note:</i><br>
+Optionally, you may use the <b>-buildTarget</b> command line parameter. Refer to the Unity Documentation for the possible values.<br>
+This will of course override the build target chosen in the Headless Builder settings.<br><br>
+
+<i>Note:</i><br>
+Any warnings or errors will be printed to the Unity Editor log.
